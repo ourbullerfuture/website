@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Open Letter in Support of Buller's Future</title>
+<meta name="description" content="An open letter from Buller residents, businesses and supporters in support of the Buller Plateaux Continuation Project.">
+<style>
+  :root{
+    --paper:#faf8f5;
+    --paper-2:#f2ede6;
+    --ink:#1f2427;
+    --ink-soft:#4d565a;
+    --muted:#6d777b;
+    --teal:#14606f;
+    --teal-dark:#0d4451;
+    --amber:#b4661f;
+    --line:#ded7cd;
+    --line-soft:#ebe5dc;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--teal-dark)}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  .wrap-wide{max-width:1140px;margin:0 auto;padding:0 22px}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+    padding:14px 0;
+  }
+  .topbar .wrap-wide{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{
+    font-weight:700;letter-spacing:.02em;font-size:17px;color:var(--ink);
+  }
+  .brand span{color:var(--teal)}
+  .topbar a.btn-sm{
+    font-size:15px;font-weight:600;text-decoration:none;
+    background:var(--teal);color:#fff;padding:9px 16px;border-radius:3px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    width:100%;
+    height:min(58vh,520px);
+    object-fit:cover;
+    object-position:center 60%;
+  }
+  .hero-credit{
+    background:var(--ink);
+    color:#b9c3c6;
+    font-size:13px;
+    padding:8px 0;
+  }
+
+  /* ---------- title ---------- */
+  .title-block{padding:52px 0 10px}
+  .eyebrow{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--amber);font-weight:700;margin:0 0 14px
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:clamp(32px,5.6vw,50px);
+    line-height:1.14;
+    letter-spacing:-0.01em;
+    margin:0 0 16px;
+    font-weight:600;
+  }
+  .standfirst{
+    font-size:20px;color:var(--ink-soft);margin:0 0 8px;max-width:60ch;
+  }
+
+  /* ---------- addressed-to panel ---------- */
+  .addressed{
+    margin:34px 0 0;
+    border-left:4px solid var(--amber);
+    background:var(--paper-2);
+    padding:24px 26px;
+  }
+  .addressed h2{
+    font-size:15px;letter-spacing:.06em;text-transform:uppercase;
+    margin:0 0 14px;color:var(--ink);font-weight:800;line-height:1.4;
+  }
+  .addressed p{margin:0 0 12px;font-size:17px;color:var(--ink-soft)}
+  .addressed p:last-child{margin-bottom:0}
+
+  /* ---------- letter ---------- */
+  .letter{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:19.5px;line-height:1.68;
+    padding:44px 0 8px;
+  }
+  .letter h2{
+    font-family:Georgia,serif;
+    font-size:26px;line-height:1.25;margin:0 0 6px;font-weight:600;
+  }
+  .letter .sub{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;color:var(--muted);margin:0 0 28px;
+  }
+  .letter p{margin:0 0 20px}
+  .pull{
+    font-family:Georgia,serif;
+    font-size:clamp(21px,3.2vw,26px);
+    line-height:1.4;
+    color:var(--teal-dark);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:22px 0;
+    margin:28px 0;
+  }
+  .letter ul{list-style:none;margin:26px 0;padding:0}
+  .letter ul li{
+    margin:0 0 20px;padding-left:20px;border-left:3px solid var(--line);
+  }
+  .letter ul li b{display:block;font-weight:700;color:var(--teal-dark);margin-bottom:4px}
+  .signoff{
+    margin:34px 0 0;padding:22px 24px;background:var(--paper-2);
+    font-size:19px;
+  }
+
+  /* ---------- sign ---------- */
+  .sign{
+    background:var(--ink);
+    color:#f2efe9;
+    margin-top:56px;
+    padding:56px 0;
+  }
+  .sign h2{
+    font-family:Georgia,serif;font-size:clamp(26px,4vw,36px);
+    margin:0 0 10px;font-weight:600;color:#fff;
+  }
+  .sign p{color:#c3ccce;margin:0 0 18px;max-width:58ch}
+  .counter{
+    display:inline-block;border:1px solid #3b4649;padding:14px 20px;margin:6px 0 26px;
+  }
+  .counter .n{font-size:34px;font-weight:800;color:#fff;line-height:1;display:block}
+  .counter .l{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9aa5a8;margin-top:6px;display:block}
+  .counter .note{font-size:13.5px;color:#8d989b;margin-top:10px;display:block;max-width:46ch;line-height:1.5;text-transform:none;letter-spacing:0}
+  .count-note{
+    border:1px solid #3b4649;padding:16px 20px;margin:6px 0 26px;
+    color:#c3ccce;font-size:15.5px;max-width:56ch;line-height:1.55;
+  }
+  .formbox{
+    background:var(--paper);color:var(--ink);
+    padding:8px;border-radius:3px;min-height:120px;
+  }
+  .form-placeholder{
+    border:2px dashed var(--line);padding:36px 24px;text-align:center;color:var(--muted);font-size:16px;
+  }
+  .fallback{font-size:15px;color:#9aa5a8;margin-top:16px}
+  .fallback a{color:#e2b57a}
+
+  /* ---------- gallery ---------- */
+  .gallery{padding:56px 0 10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .grid figure{margin:0}
+  .grid img{width:100%;height:210px;object-fit:cover}
+  .grid figcaption{font-size:13px;color:var(--muted);padding-top:6px}
+  .tall img{height:430px}
+
+  /* ---------- who ---------- */
+  .who{padding:48px 0 10px;border-top:1px solid var(--line);margin-top:48px}
+  h2.sec{
+    font-family:Georgia,serif;font-size:clamp(24px,3.6vw,32px);margin:0 0 18px;font-weight:600;
+  }
+  .who p{max-width:62ch;color:var(--ink-soft)}
+  .names{
+    list-style:none;padding:0;margin:26px 0 0;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 24px;
+  }
+  .names li{
+    padding:10px 0;border-bottom:1px solid var(--line-soft);font-weight:600;color:var(--ink);
+  }
+
+  /* ---------- notes / footer ---------- */
+  .notes{padding:44px 0;font-size:15.5px;color:var(--ink-soft)}
+  .notes h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:26px 0 8px}
+  .notes ul{margin:0;padding-left:20px}
+  .notes li{margin-bottom:5px}
+  footer{
+    border-top:1px solid var(--line);padding:26px 0 60px;font-size:14.5px;color:var(--muted);
+  }
+
+  /* ---------- contact ---------- */
+  .contact{padding:44px 0 48px;border-top:1px solid var(--line)}
+  .contact p{max-width:60ch;color:var(--ink-soft)}
+  .contact form{max-width:520px;margin-top:26px}
+  .contact label{
+    display:block;font-size:14px;font-weight:700;letter-spacing:.03em;
+    text-transform:uppercase;color:var(--ink);margin:18px 0 6px;
+  }
+  .contact .req{
+    font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-size:13px;
+  }
+  .contact input[type=text],
+  .contact input[type=email],
+  .contact textarea{
+    width:100%;padding:12px 14px;font:inherit;font-size:16px;
+    border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:3px;
+  }
+  .contact input:focus,.contact textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+  .contact textarea{resize:vertical}
+  .contact button{
+    margin-top:22px;background:var(--teal);color:#fff;border:0;
+    font:inherit;font-size:16px;font-weight:600;padding:13px 26px;border-radius:3px;cursor:pointer;
+  }
+  .contact button:hover{background:var(--teal-dark)}
+  .contact .hp{position:absolute;left:-9999px}
+  .draft{
+    background:#8a2f13;color:#fff;text-align:center;font-size:14px;
+    padding:9px 16px;font-weight:600;letter-spacing:.03em;
+  }
+  @media (max-width:640px){
+    body{font-size:17px}
+    .letter{font-size:18.5px}
+    .grid img{height:180px}
+    .tall img{height:300px}
+  }
+</style>
+</head>
+<body>
+
+<!-- REMOVE THIS BANNER BEFORE GOING LIVE -->
+<div class="draft">DRAFT — not for public sharing yet</div>
+
+<div class="topbar">
+  <div class="wrap-wide">
+    <div class="brand">Our Buller <span>Future</span></div>
+    <a class="btn-sm" href="#sign">Sign the letter</a>
+  </div>
+</div>
+
+<img class="hero" src="images/plateau-view.jpg" alt="View from the Denniston plateau looking down over the Buller river mouth, farmland and the coast towards Westport.">
+<div class="hero-credit"><div class="wrap-wide">Photo sourced from the Buller Kawatiri image library, photo by Ali and Don Parish</div></div>
+
+<div class="wrap">
+
+  <div class="title-block">
+    <p class="eyebrow">An open letter</p>
+    <h1>Open Letter in Support of Buller&rsquo;s Future</h1>
+    <p class="standfirst">Supporting the Buller Plateaux Continuation Project (Stockton Mine). Add your name below.</p>
+  </div>
+
+  <div class="addressed">
+    <h2>An open letter to the Government of New Zealand, to Parliament, and to every party and candidate seeking to represent the West Coast at the 2026 General Election</h2>
+    <p>New Zealanders go to the polls on 7 November 2026. Before we vote, we ask every party, and every candidate standing in West Coast-Tasman, to tell the people of Buller where they stand on this project and on the economic future of this district.</p>
+    <p>Our position is set out below.</p>
+  </div>
+
+  <!-- =========================================================
+       LETTER TEXT BELOW IS THE GROUP-APPROVED WORDING.
+       DO NOT EDIT WITHOUT TAKING IT BACK TO THE GROUP.
+       ========================================================= -->
+  <div class="letter">
+    <h2>Open Letter in Support of Buller&rsquo;s Future</h2>
+    <p class="sub">Supporting the Buller Plateaux Continuation Project (Stockton Mine)</p>
+
+    <div class="pull">This isn&rsquo;t a petition about coal. It&rsquo;s a petition about Buller&rsquo;s future.</div>
+
+    <p>We are members and supporters of the Buller community who believe in the future of our District. We support the Buller Plateaux Continuation Project because of its profound importance for our people, our community, our infrastructure and our future.</p>
+
+    <p>We recognise that mining has environmental impacts and that people will hold different views about those impacts. Our support is not based on a belief that mining should proceed at any cost. Rather, we believe this particular project is profoundly important to the economic and social wellbeing of Buller, the wider West Coast and the people who call this place home.</p>
+
+    <p>We want the voices of those who support the continuation of Stockton Mine to be heard and taken into account.</p>
+
+    <p>We ask that the fast track approvals panel, any other decision makers, and the House of Representatives, support the Buller Plateaux Continuation Project proceeding through the Fast-Track Approvals process and recognise its significant economic and social importance to Buller, the wider West Coast and New Zealand. The reasons why:</p>
+
+    <ul>
+      <li><b>For our people</b>Hundreds of Buller families rely directly on the jobs and incomes created by the existing Stockton mine, with hundreds more supported by the wider economy that it creates.</li>
+      <li><b>For our local businesses</b>Stockton directly supports more than 125 businesses, with its economic contribution flowing through many more households and businesses across our district.</li>
+      <li><b>For our communities</b>Good jobs keep people here and help keep our schools, sports clubs and community groups strong. The income and business activity generated by Stockton also gives local people and businesses the capacity to volunteer, sponsor, donate and support the organisations that make Buller a strong community.</li>
+      <li><b>For our environment</b>Stockton produces high-quality coal used for essential steelmaking, while its continued operations support the ongoing treatment of historic mining impacts, predator control and environmental programmes across the plateau. We believe responsible mining can sit alongside efforts to diversify our economy and build a stronger more resilient Buller for future generations.</li>
+      <li><b>For Buller&rsquo;s future</b>Recent industry closures have already cost our district jobs and reduced economic resilience. Buller has lived through major industry decline before including the 2013 Solid Energy collapse. We want to avoid the flow-on effects that reach far beyond lost jobs - affecting our population, businesses, property values, access to local services and the health and wellbeing of our people and families. We do not want to go backwards again.</li>
+    </ul>
+
+    <div class="signoff">We the undersigned record our support for the Buller Plateaux Continuation Project and ask that decision-makers take this community support into account.</div>
+  </div>
+
+</div>
+
+<!-- =========================================================
+     SIGN SECTION
+     ========================================================= -->
+<div class="sign" id="sign">
+  <div class="wrap">
+    <h2>Add your name</h2>
+    <p>Anyone can sign: Buller residents, business owners, people who work here, people who used to live here, and supporters from anywhere in New Zealand.</p>
+    <p>Prefer pen and paper? Signature sheets are available and will be distributed to participating businesses and individuals for collecting signatures. <a href="#contact">Contact us</a> if you would like some.</p>
+
+    <!-- =====================================================
+         SIGNATURE COUNT
+         Leave the note below showing until you have a number
+         worth publishing. When you do, delete the .count-note
+         block and un-comment the .counter block underneath it,
+         then update the number each time you redeploy.
+         ===================================================== -->
+    <div class="count-note">
+      Signatures are being collected online and on paper.
+      We will publish the running total here once counting is under way.
+    </div>
+
+    <!--
+    <div class="counter">
+      <span class="n">1,240</span>
+      <span class="l">Signatures as at 12 September 2026</span>
+      <span class="note">Includes 380 collected on paper. Paper sheets are added in batches, so this number updates every few days rather than instantly.</span>
+    </div>
+    -->
+
+
+    <div class="formbox">
+      <!-- =====================================================
+           TALLY EMBED — form 5BP6qZ
+           If Tally gives you a different snippet, replace this
+           whole block with theirs.
+           ===================================================== -->
+      <iframe data-tally-src="https://tally.so/embed/5BP6qZ?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+              loading="lazy" width="100%" height="2856" frameborder="0"
+              marginheight="0" marginwidth="0"
+              title="Open Letter in Support of Buller's Future — add your name"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(null==d.querySelector('script[src="'+w+'"]')){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s)}</script>
+    </div>
+
+    <p class="fallback">Having trouble with the form? <a href="https://tally.so/r/5BP6qZ" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+  </div>
+</div>
+
+<!-- =========================================================
+     GALLERY
+     ========================================================= -->
+<div class="wrap-wide gallery">
+  <div class="grid">
+    <figure class="tall"><img src="images/main-street-sunset.jpg" alt="Palmerston Street, Westport, at sunset with the ranges behind."><figcaption>Palmerston Street, Westport</figcaption></figure>
+    <figure class="tall"><img src="images/bridge-sunset.jpg" alt="Aerial view of the Buller River bridge and Westport at sunset."><figcaption>The Buller River and Westport</figcaption></figure>
+    <figure class="tall"><img src="images/family-walking.jpg" alt="A family walking along a Westport footpath in the sun."><figcaption>A weekday in town</figcaption></figure>
+  </div>
+  <div class="grid" style="margin-top:14px">
+    <figure><img src="images/palmerston-street.jpg" alt="Shops and cars on Palmerston Street, Westport, on a clear day."><figcaption>The main street</figcaption></figure>
+    <figure><img src="images/shopkeeper.jpg" alt="A shop worker stepping out onto the street with a coffee, children cycling past."><figcaption>Local business</figcaption></figure>
+    <figure><img src="images/fish-and-chips.jpg" alt="People sitting on the grass eating fish and chips at a community event, the clock tower behind."><figcaption>A community event in town</figcaption></figure>
+    <figure><img src="images/port-aerial.jpg" alt="Aerial view of the Port of Westport, the fishing fleet and the river mouth."><figcaption>The port and the fishing fleet</figcaption></figure>
+    <figure><img src="images/wharf-town.jpg" alt="A ship at the Westport wharf with the town and ranges behind."><figcaption>Westport from the river</figcaption></figure>
+    <figure><img src="images/welcome-sign.jpg" alt="The Welcome to Westport sign at the entrance to town."><figcaption>Coming into Westport</figcaption></figure>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- =========================================================
+       WHO WE ARE
+       ========================================================= -->
+  <div class="who">
+    <h2 class="sec">Who we are, and why we&rsquo;re doing this</h2>
+    <p>We are a group of Buller residents. We are not an organisation, a company or a political party. We put this letter together because we live here, we work here, and we want the people making this decision to hear from the people it affects.</p>
+    <p>Anyone who signs this letter is speaking for themselves. So are we.</p>
+
+    <ul class="names">
+      <li>Jessie Creedmore</li>
+      <li>Garry Howard</li>
+      <li>Steph Newburry</li>
+      <li>Josh Reynolds</li>
+      <li>Tania Reynolds</li>
+      <li>Casey and Troy Scanlon</li>
+    </ul>
+  </div>
+
+  <!-- =========================================================
+       NOTES
+       ========================================================= -->
+  <div class="notes">
+
+    <h3>How your details will be used</h3>
+    <p>This is an open letter. When you add your name, you are signing it.</p>
+    <p>Your name, town and connection to Buller will be provided to the decision makers this letter is addressed to. That may include the fast-track expert panel, government Ministers and Members of Parliament.</p>
+    <p>This applies whether you sign online or on a paper sheet. Both are held together as one signature list.</p>
+    <p>The full signature list may be provided to Parliament and to the fast-track expert panel so that the signatures can be verified if we are asked to prove them. That is why we ask for a real name and a working email address for every signature, and why we check for duplicates before we publish any number.</p>
+    <p>Your email address is never published, and it is not part of what we send to decision makers. We hold it so we can confirm signatures are genuine and contact you if you ask us to. If a decision maker asks us to prove the signatures are real, we may need to provide it.</p>
+    <p>We do not publish signatories' names on this website. Your signature is counted, and your name goes to the decision makers.</p>
+    <p>Businesses are the one exception. If you sign on behalf of a business and tell us on the form that we may, we will list your business name on this page as a signatory.</p>
+    <p>We may also publish a small selection of the comments people leave, but only where the person has given permission on the form, and only in the form they chose: with their name, or without it.</p>
+    <p>We will ask that your details be treated in confidence. We cannot guarantee it. Documents provided to Parliament or to a government agency can become part of a public record, or be released under the Official Information Act.</p>
+    <p>Signatures are collected by Our Buller Future. Questions? <a href="#contact">Contact us</a>.</p>
+
+    <h3>Photo credits</h3>
+    <ul>
+      <li>View over Buller from the plateau &mdash; Buller Kawatiri image library, photo by Ali and Don Parish</li>
+      <li>Palmerston Street at sunset &mdash; [credit to confirm]</li>
+      <li>Buller River bridge &mdash; [credit to confirm]</li>
+      <li>Palmerston Street, daytime &mdash; [credit to confirm]</li>
+      <li>Gibbys corner &mdash; [credit to confirm]</li>
+      <li>Westport from the river &mdash; [credit to confirm]</li>
+      <li>Port of Westport &mdash; [credit to confirm]</li>
+      <li>Community event &mdash; [credit to confirm]</li>
+      <li>Local business &mdash; [credit to confirm]</li>
+      <li>Family walking &mdash; [credit to confirm]</li>
+      <li>Welcome to Westport sign &mdash; [credit to confirm]</li>
+    </ul>
+    <p style="margin-top:10px">All photographs used with permission.</p>
+
+  </div>
+
+  <!-- =========================================================
+       CONTACT FORM (Netlify Forms)
+       After deploying, go to Netlify > Forms > Form notifications
+       and add an email notification to ourbullerfuture@gmail.com.
+       ========================================================= -->
+  <div class="contact" id="contact">
+    <h2 class="sec">Contact us</h2>
+    <p>Questions, or want signature sheets to collect on paper? Send us a message and one of the organisers will get back to you.</p>
+
+    <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Leave this empty: <input name="bot-field"></label></p>
+
+      <label for="c-name">Your name</label>
+      <input id="c-name" type="text" name="name" autocomplete="name">
+
+      <label for="c-email">Your email address <span class="req">required</span></label>
+      <input id="c-email" type="email" name="email" required autocomplete="email">
+
+      <label for="c-msg">Your message <span class="req">required</span></label>
+      <textarea id="c-msg" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Our Buller Future &mdash; a group of Buller residents.</p>
+    <p>Authorised by the organisers named above, Westport.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
