@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Read some of the comments - Our Buller Future</title>
+<meta name="description" content="Comments from people who have signed the open letter supporting the Buller Plateaux Continuation Project.">
+
+<style>
+  :root{
+    --paper:#faf8f5;
+    --paper-2:#f2ede6;
+    --ink:#1f2427;
+    --ink-soft:#4d565a;
+    --muted:#6d777b;
+    --teal:#14606f;
+    --teal-dark:#0d4451;
+    --amber:#b4661f;
+    --line:#ded7cd;
+    --line-soft:#ebe5dc;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--teal-dark)}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  .wrap-wide{max-width:1140px;margin:0 auto;padding:0 22px}
+
+  /* ---------- top bar (same as index) ---------- */
+  .topbar{
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+    padding:14px 0;
+  }
+  .topbar .wrap-wide{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:.02em;font-size:17px;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--teal)}
+  .topbar nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .topbar nav a.plain{font-size:15px;font-weight:600;color:var(--teal-dark);text-decoration:none}
+  .topbar a.btn-sm{
+    font-size:15px;font-weight:600;text-decoration:none;
+    background:var(--teal);color:#fff;padding:9px 16px;border-radius:3px;
+  }
+
+  /* ---------- title ---------- */
+  .title-block{padding:52px 0 10px}
+  .eyebrow{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--amber);font-weight:700;margin:0 0 14px
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:clamp(32px,5.6vw,50px);
+    line-height:1.14;
+    letter-spacing:-0.01em;
+    margin:0 0 16px;
+    font-weight:600;
+  }
+  .standfirst{font-size:20px;color:var(--ink-soft);margin:0 0 8px;max-width:60ch}
+  .count-line{font-size:15px;color:var(--muted);margin:14px 0 0}
+  .count-line b{color:var(--ink)}
+
+  /* ---------- featured carousel ---------- */
+  .featured{margin:36px 0 0}
+  .feat-frame{
+    position:relative;
+    background:var(--ink);color:#f2efe9;
+    padding:44px 28px 40px;
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .feat-track{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+    gap:0;
+    margin:0 -28px;
+    padding:0 28px;
+  }
+  .feat-track::-webkit-scrollbar{display:none}
+  .feat-slide{
+    flex:0 0 100%;
+    scroll-snap-align:center;
+    padding:0 28px;
+    min-width:0;
+  }
+  .feat-slide .q{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:clamp(21px,3vw,28px);
+    line-height:1.4;
+    margin:0;
+    color:#fff;
+    text-wrap:pretty;
+  }
+  .feat-slide .q::before{
+    content:"\201C";
+    display:block;
+    font-size:74px;line-height:.6;
+    color:#e2b57a;
+    margin-bottom:14px;
+    font-family:Georgia,serif;
+  }
+  .feat-slide .who{
+    margin:22px 0 0;
+    font-size:15px;letter-spacing:.08em;text-transform:uppercase;
+    color:#9aa5a8;
+  }
+  .feat-slide .who b{color:#e2b57a;font-weight:700}
+  .feat-nav{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:14px;margin-top:26px;padding:0 28px;
+  }
+  .feat-nav button{
+    background:transparent;color:#f2efe9;border:1px solid #3b4649;
+    font:inherit;font-size:15px;font-weight:600;padding:9px 16px;border-radius:3px;cursor:pointer;
+    white-space:nowrap;
+  }
+  .feat-nav button:hover{border-color:#e2b57a;color:#e2b57a}
+  .feat-dots{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
+  .feat-dots i{width:8px;height:8px;border-radius:50%;background:#3b4649;display:block;transition:background .2s}
+  .feat-dots i.on{background:#e2b57a}
+  .feat-hint{font-size:13px;color:#8d989b;text-align:center;margin:14px 0 0}
+
+  /* ---------- all comments grid ---------- */
+  .all{padding:56px 48px 10px;max-width:1080px}
+  h2.sec{
+    font-family:Georgia,serif;font-size:clamp(24px,3.6vw,32px);margin:0 0 8px;font-weight:600;
+  }
+  .all .lede{max-width:62ch;color:var(--ink-soft);margin:0 0 28px}
+  .cards{
+    columns:3;column-gap:16px;
+  }
+  .card{
+    break-inside:avoid;
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:3px solid var(--teal);
+    border-radius:3px;
+    padding:22px 22px 18px;
+    margin:0 0 16px;
+  }
+  .card .q{
+    margin:0;
+    font-size:17px;line-height:1.55;color:var(--ink);
+    text-wrap:pretty;
+  }
+  .card .q::before{
+    content:"\201C";
+    font-family:Georgia,serif;
+    font-size:40px;line-height:0;
+    color:var(--amber);
+    vertical-align:-14px;
+    margin-right:4px;
+  }
+  .card .who{
+    margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line-soft);
+    font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+  }
+  .card .who b{color:var(--teal-dark);font-weight:700}
+  .more{margin:8px 0 0;text-align:center}
+  .more button{
+    background:var(--teal);color:#fff;border:0;
+    font:inherit;font-size:16px;font-weight:600;padding:13px 26px;border-radius:3px;cursor:pointer;
+  }
+  .more button:hover{background:var(--teal-dark)}
+
+  /* ---------- add yours ---------- */
+  .cta{
+    margin-top:56px;padding:40px 0;
+    background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+  .cta p{margin:0;font-size:19px;max-width:48ch}
+  .cta a.btn{
+    font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap;
+    background:var(--teal);color:#fff;padding:13px 26px;border-radius:3px;
+  }
+  .cta a.btn:hover{background:var(--teal-dark)}
+
+  /* ---------- notes / footer (same as index) ---------- */
+  .notes{padding:44px 0 0;font-size:15.5px;color:var(--ink-soft)}
+  .notes h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:0 0 8px}
+  .notes p{max-width:66ch}
+  footer{
+    border-top:1px solid var(--line);padding:26px 0 60px;font-size:14.5px;color:var(--muted);margin-top:44px;
+  }
+
+  @media (max-width:900px){ .cards{columns:2} }
+  @media (max-width:640px){
+    body{font-size:17px}
+    .cards{columns:1}
+    .all{padding:48px 22px 10px}
+    .feat-frame{padding:34px 18px 30px}
+    .feat-track{margin:0 -18px;padding:0 18px}
+    .feat-slide{padding:0 18px}
+    .feat-nav{padding:0 18px}
+    .feat-nav button{font-size:14px;padding:8px 12px}
+  }
+  @media (prefers-reduced-motion:reduce){ .feat-track{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     TOP BAR
+     ========================================================= -->
+<div class="topbar">
+  <div class="wrap-wide">
+    <a class="brand" href="index.html">Organised by Our Buller <span>Future</span></a>
+    <nav>
+      <a class="plain" href="index.html">Read the letter</a>
+      <a class="btn-sm" href="index.html#sign">Sign the letter</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- =========================================================
+       TITLE
+       ========================================================= -->
+  <div class="title-block">
+    <p class="eyebrow">In their own words</p>
+    <h1>Read some of the comments</h1>
+    <p class="standfirst">When people sign the open letter, many add a few words about why. Here are some of them.</p>
+    <p class="count-line">Just a few comments published here. We will add more as we can - there are hundreds!</p>
+  </div>
+
+  <!-- =========================================================
+       FEATURED (rotates, swipe or use the buttons)
+       ========================================================= -->
+  <div class="featured">
+    <div class="feat-frame">
+      <div class="feat-track" id="track" aria-live="polite"></div>
+      <div class="feat-nav">
+        <button type="button" id="prev" aria-label="Previous comment">&larr; Previous</button>
+        <div class="feat-dots" id="dots"></div>
+        <button type="button" id="next" aria-label="Next comment">Next &rarr;</button>
+      </div>
+      <p class="feat-hint">Swipe on a phone, or use the buttons. Changes on its own every few seconds.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- =========================================================
+     ALL COMMENTS
+     ========================================================= -->
+<div class="wrap-wide all">
+  <h2 class="sec">Just a few of the comments - there are hundreds</h2>
+  <p class="lede">We will attempt to publish as many of the comments as we can. Shown in no particular order. Each one is from a person who signed the letter and agreed to their comment being shared.</p>
+  <div class="cards" id="cards"></div>
+  <p class="more" id="more" hidden><button type="button" id="moreBtn">Show more comments</button></p>
+</div>
+
+<!-- =========================================================
+     ADD YOURS
+     ========================================================= -->
+<div class="cta">
+  <div class="wrap">
+    <p>Want to add your voice? Sign the open letter and leave a comment of your own.</p>
+    <a class="btn" href="index.html#sign">Sign the letter</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="notes">
+    <h3>About these comments</h3>
+    <p>Every comment on this page was written by someone who signed the open letter and agreed to it being published. We show only the details each person chose to share. Nobody's email address is published, and the signature list itself is not on this website. See <a href="index.html#details">how your details will be used</a>.</p>
+    <p>We may shorten a comment for length or fix an obvious typo, and we don't publish anything that names or targets an individual.</p>
+  </div>
+
+  <footer>
+    Our Buller Future — a group of Buller residents.<br>
+    Authorised by the organisers named above, Westport.
+  </footer>
+</div>
+
+<script>
+/* =========================================================
+   THE COMMENTS. This is the only part you need to edit.
+
+   Add a new comment by copying one block, from the opening
+   curly bracket {  to the closing },  and pasting it in.
+   Keep the comma after each } except the very last one.
+
+   quote : what they wrote (put it inside the quote marks;
+           if their comment itself contains a " mark, change
+           it to a ' instead)
+   who   : how they agreed to be shown, e.g. "Sarah",
+           "Sarah, Westport", "A Granity resident",
+           "Business owner, Reefton". Leave "" to show nothing.
+   where : optional town, shown after the name in small caps.
+           Leave "" if it's already in who, or not wanted.
+
+   To take a comment down, delete its block.
+   Order here doesn't matter: the page shuffles them.
+   ========================================================= */
+const COMMENTS = [
+  {
+    quote: "SAMPLE 1. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 2. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 3. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 4. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 5. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 6. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 7. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 8. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 9. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 10. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 11. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  },
+  {
+    quote: "SAMPLE 12. Replace this with a real comment.",
+    who: "Name or description",
+    where: "Town"
+  }
+];
+
+/* How many cards to show before the "Show more" button appears. */
+const SHOW_FIRST = 12;
+
+/* Seconds between automatic changes in the featured box. */
+const ROTATE_EVERY = 8;
+
+/* =========================================================
+   Nothing below here needs editing.
+   ========================================================= */
+(function(){
+  const esc = s => String(s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const whoLine = c => {
+    const w = esc(c.who).trim(), t = esc(c.where).trim();
+    if(!w && !t) return "";
+    return '<p class="who">' + (w ? '<b>'+w+'</b>' : '') + (w && t ? ' &middot; ' : '') + t + '</p>';
+  };
+
+  // shuffle so different visitors see a different first comment
+  const list = COMMENTS.slice();
+  for(let i=list.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [list[i],list[j]]=[list[j],list[i]]; }
+
+  /* ---- featured carousel ---- */
+  const track = document.getElementById('track');
+  const dots  = document.getElementById('dots');
+  const feat  = list.slice(0, Math.min(10, list.length));   // up to 10 in the rotation
+  track.innerHTML = feat.map(c =>
+    '<div class="feat-slide"><p class="q">'+esc(c.quote)+'</p>'+whoLine(c)+'</div>'
+  ).join('');
+  dots.innerHTML = feat.map((_,i)=>'<i'+(i===0?' class="on"':'')+'></i>').join('');
+  const dotEls = [...dots.children];
+
+  let idx = 0, timer = null;
+  const slideW = () => track.clientWidth;
+  function goTo(i, instant){
+    idx = (i + feat.length) % feat.length;
+    track.scrollTo({left: idx*slideW(), behavior: instant ? 'auto' : 'smooth'});
+    dotEls.forEach((d,k)=>d.classList.toggle('on', k===idx));
+  }
+  function start(){ stop(); if(feat.length>1) timer = setInterval(()=>goTo(idx+1), ROTATE_EVERY*1000); }
+  function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+
+  document.getElementById('prev').addEventListener('click', ()=>{ goTo(idx-1); start(); });
+  document.getElementById('next').addEventListener('click', ()=>{ goTo(idx+1); start(); });
+  dotEls.forEach((d,k)=>d.addEventListener('click', ()=>{ goTo(k); start(); }));
+
+  // keep the dots in step when someone swipes
+  let st;
+  track.addEventListener('scroll', ()=>{
+    clearTimeout(st);
+    st = setTimeout(()=>{
+      const k = Math.round(track.scrollLeft / slideW());
+      if(k!==idx){ idx=k; dotEls.forEach((d,j)=>d.classList.toggle('on', j===idx)); }
+    }, 80);
+  });
+  track.addEventListener('touchstart', stop, {passive:true});
+  track.addEventListener('touchend', start, {passive:true});
+  track.addEventListener('mouseenter', stop);
+  track.addEventListener('mouseleave', start);
+  window.addEventListener('resize', ()=>goTo(idx, true));
+  start();
+
+  /* ---- all comments grid ---- */
+  const cards = document.getElementById('cards');
+  const more  = document.getElementById('more');
+  let shown = 0;
+  function renderMore(){
+    const chunk = list.slice(shown, shown+SHOW_FIRST);
+    cards.insertAdjacentHTML('beforeend', chunk.map(c =>
+      '<div class="card"><p class="q">'+esc(c.quote)+'</p>'+whoLine(c)+'</div>'
+    ).join(''));
+    shown += chunk.length;
+    more.hidden = shown >= list.length;
+  }
+  renderMore();
+  document.getElementById('moreBtn').addEventListener('click', renderMore);
+})();
+</script>
+</body>
+</html>
