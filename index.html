@@ -230,6 +230,9 @@
     .grid img{height:180px}
     .tall img{height:300px}
   }
+  .credits summary{cursor:pointer;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);font-weight:700;margin:26px 0 8px}
+.credits summary:hover{color:var(--teal)}
+.credits[open] summary{margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -386,8 +389,9 @@
     <p>We will ask that your details be treated in confidence. We cannot guarantee it. Documents provided to Parliament or to a government agency can become part of a public record, or be released under the Official Information Act.</p>
     <p>Signatures are collected by Our Buller Future. Questions? <a href="#contact"></a>.</p>
 
-    <h3>Photo credits</h3>
-    <ul>
+   <details class="credits">
+  <summary>Photo credits</summary>
+  <ul>
       <li>View over Buller from the plateau &mdash; Buller Kawatiri image library, photo by Ali and Don Parish</li>
       <li>Palmerston Street at sunset &mdash; Buller Kawatiri image library, Tess Row </li>
       <li>Buller River bridge &mdash; Nomad Audio & Video </li>
@@ -405,8 +409,8 @@
       <li>Sunrise above the cloud from the tops &mdash; Buller Kawatiri Image Library, Craig Adams</li>
       <li>Coaltown Museum, Westport &mdash; Clint Trehan</li>
 
-      
-    </ul>
+        </ul>
+</details>
     <p style="margin-top:10px">All photographs were sourced from the West Coast Image Library unless otherwise stated.</p>
 
   </div>
